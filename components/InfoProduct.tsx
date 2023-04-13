@@ -7,7 +7,7 @@ export const InfoProduct: React.FC<InfoProductProps> = ({ product }) => {
         <div className="grid content-between w-full p-4 text-gray-700">
         <div>
           <div className="flex justify-between">
-            <h3 className="font-bold">
+            <h3 className="text-2xl font-bold">
               {product.title} - {product.brand}
             </h3>
             <p>${product.price}</p>
@@ -19,7 +19,7 @@ export const InfoProduct: React.FC<InfoProductProps> = ({ product }) => {
           <p className="border border-orange-200 rounded bg-orange-50 px-2 py-1 text-xs">
             {product.category}
           </p>
-          <p>{product.rating.toFixed(1)}/5</p>
+          <p><b>{product.rating.toFixed(1)}</b>/5</p>
         </div>
       </div>
     )
