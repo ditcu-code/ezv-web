@@ -1,5 +1,6 @@
 import axios from 'axios';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { CategoryTypes } from '../../components/InfoProduct';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
@@ -30,7 +31,7 @@ export type ProductType = {
   rating: number;
   stock: number;
   brand: string;
-  category: string;
+  category: CategoryTypes;
   thumbnail: string;
   images: string[];
 };
