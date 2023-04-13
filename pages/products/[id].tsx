@@ -19,7 +19,7 @@ export default function Products(product: ProductType) {
         <div className="flex relative h-48 lg:px-8 py-1">
           <InfoProduct product={product} />
         </div>
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 mx-auto">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-x-8 mx-auto items-center">
           {product.images.map((item) => (
             <Image
               key={item}

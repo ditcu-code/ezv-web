@@ -10,7 +10,7 @@ export const InfoProduct: React.FC<InfoProductProps> = ({ product }) => {
             <h3 className="text-2xl font-bold">
               {product.title} - {product.brand}
             </h3>
-            <p>${product.price}</p>
+            <p className="text-2xl font-bold">${product.price}</p>
           </div>
           <p className="my-4">{product.description}</p>
         </div>
@@ -19,7 +19,7 @@ export const InfoProduct: React.FC<InfoProductProps> = ({ product }) => {
           <p className="border border-orange-200 rounded bg-orange-50 px-2 py-1 text-xs">
             {product.category}
           </p>
-          <p><b>{product.rating.toFixed(1)}</b>/5</p>
+          <p><b>{product.rating.toFixed(1)}</b> out of 5</p>
         </div>
       </div>
     )
