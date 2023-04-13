@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { ProductType } from "../api/products";
 import { GetStaticProps } from "next";
-import InfoProduct from "../../component/InfoProduct";
+import InfoProduct from "../../components/InfoProduct";
 
 export default function Products(product: ProductType) {
 

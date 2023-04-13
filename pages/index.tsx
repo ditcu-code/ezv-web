@@ -2,7 +2,7 @@ import Image from "next/image";
 import { PropsType, ResponseDataType } from "./api/products";
 import Link from "next/link";
 import { GetStaticProps } from "next";
-import InfoProduct from "../component/InfoProduct";
+import InfoProduct from "../components/InfoProduct";
 
 const Home = ({ products }: PropsType) => {
   return (
