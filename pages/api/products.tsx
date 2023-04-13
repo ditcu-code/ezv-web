@@ -10,7 +10,18 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 }
 
-export type Product = {
+export interface ResponseDataType {
+  products: ProductType[]
+  total: Number
+  skip: Number
+  limit: Number
+}
+
+export interface PropsType {
+  products: ProductType[];
+}
+
+export type ProductType = {
   id: number;
   title: string;
   description: string;
