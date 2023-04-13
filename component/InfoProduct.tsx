@@ -2,7 +2,7 @@ import { ProductType } from "../pages/api/products";
 
 export type InfoProductProps = { product: ProductType }
 export const InfoProduct: React.FC<InfoProductProps> = ({ product }) => {
-    console.log({ product })
+
     return (
         <div className="grid content-between w-full p-4 text-gray-700">
         <div>

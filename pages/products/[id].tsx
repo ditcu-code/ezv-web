@@ -5,7 +5,7 @@ import { GetStaticProps } from "next";
 import InfoProduct from "../../component/InfoProduct";
 
 export default function Products(product: ProductType) {
-  console.log(product);
+
   return (
     <div className="bg-gray-100">
       <div className="flex flex-col w-full max-w-7xl mx-auto p-8">
