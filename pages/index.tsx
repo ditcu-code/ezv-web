@@ -18,11 +18,11 @@ const Home = ({ products }: PropsType) => {
           >
             <div className="sm:flex relative h-full sm:h-48 px-16 py-1 hover:bg-gray-50">
               <Image
-                className="object-cover rounded-xl max-h-48 my-4 mx-auto w-96"
+                className="object-cover rounded-xl my-4 mx-auto w-96"
                 src={product.thumbnail}
                 alt={product.title}
-                width={300}
-                height={300}
+                width={250}
+                height={250}
                 priority
               />
               <InfoProduct product={product} />
