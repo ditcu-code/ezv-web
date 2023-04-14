@@ -10,7 +10,7 @@ export default function Products(product: ProductType) {
     <div className="bg-gray-100">
       <div className="flex flex-col w-full max-w-7xl mx-auto p-8">
         <Image
-          className="object-cover mx-auto rounded-xl max-h-full my-4"
+          className="object-cover mx-auto rounded-xl max-h-96 my-4"
           src={product.thumbnail}
           alt={product.title}
           width={1200}
@@ -23,7 +23,7 @@ export default function Products(product: ProductType) {
           {product.images.map((item) => (
             <Image
               key={item}
-              className="object-cover rounded-xl max-h-48 my-4 "
+              className="object-cover rounded-xl h-48 my-4"
               src={item}
               alt={product.title}
               width={270}
