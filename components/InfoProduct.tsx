@@ -3,7 +3,7 @@ import { ProductType } from "../pages/api/products";
 export type InfoProductProps = { product: ProductType };
 export const InfoProduct: React.FC<InfoProductProps> = ({ product }) => {
   return (
-    <div className="grid content-between w-full p-4 text-gray-700">
+    <div className="grid content-between w-9/12 p-4 px-6 text-gray-700">
       <div>
         <div className="flex justify-between">
           <h3 className="text-2xl font-bold">
@@ -14,7 +14,7 @@ export const InfoProduct: React.FC<InfoProductProps> = ({ product }) => {
         <p className="my-4">{product.description}</p>
       </div>
 
-      <div className="flex justify-between w-full ">
+      <div className="flex justify-between w-full">
         {CategoryInfo(product.category)}
         <p>
           <b>{product.rating.toFixed(1)}</b> out of 5
